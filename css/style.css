@@ -673,4 +673,100 @@ section {
     font-size: 50%;
   }
 }
+
+/* === About: make "How I work" readable === */
+.about .info-container h1 {
+  margin-top: 1.25rem;
+}
+
+.about p,
+.about .info-container p {
+  color: #cbd5e1;             /* light slate on dark bg */
+  opacity: 1;                 /* kill any global low-opacity */
+  text-transform: none !important;  /* stop Auto Capitalize */
+  letter-spacing: 0;          /* reset if theme spaces caps */
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-top: .5rem;
+  max-width: 900px;           /* comfortable line length */
+}
+
+/* if stats card overlaps the paragraph on some screens */
+.about .row { position: relative; }
+.about .info-container { position: relative; z-index: 2; }
+.about .count-container { position: relative; z-index: 1; }
+
+.about .info-container p {
+  font-size: 2.1rem;       /* bigger than default */
+  line-height: 1.85;       /* comfy spacing */
+  color: #e5e7eb;          /* light gray for better contrast */
+  max-width: 900px;
+  margin-top: 0.75rem;
+}
+
+/* About: How I Work full width */
+.about .info-container p {
+  font-size: 3.15rem;
+  line-height: 1.9;
+  color: #e5e7eb;
+  max-width: 100%;      /* full line, not capped */
+  margin-top: 0.75rem;
+}
+
+/* About section sub-headings */
+.about .info-container h1 {
+  font-size: 1.6rem;           /* a bit larger */
+  color: #38bdf8;              /* soft cyan accent */
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+/* Optionally tweak spacing for cleaner layout */
+.about .row + .row h1 {
+  margin-top: rem;
+}
+/* About: accent sub-headings (Personal Info, How I Work) */
+section.about .info-container > h1,
+section.about .row .info-container > h1 {
+  color: #38bdf8 !important;      /* soft cyan accent so it contrasts the paragraph */
+  font-size: clamp(1.7rem, 2.2vw, 2rem);
+  line-height: 1.25;
+  margin: 0 0 0.75rem 0;
+  letter-spacing: .5px;
+}
+
+/* Contact page: keep email + address exactly as typed */
+.contact h3,
+.contact p,
+.contact a {
+  text-transform: none !important;
+}
+
+
+/* Personal info labels */
+.about .box h3 span {
+  font-size: 2.10 rem;          /* a bit smaller */
+  font-weight: 500;            /* lighter weight */
+  color: #9ca3af;              /* soft gray */
+  text-transform: none !important; /* no forced caps */
+  margin-right: 0.25rem;
+}
+
+/* Ensure values look stronger */
+.about .box h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e5e7eb;              /* light gray/white for contrast */
+} 
+
+/* add breathing room before HOW I WORK */
+.about .row + .row {
+  margin-top: 3rem;   /* adjust spacing */
+}
+
+/* also add spacing above section headings inside about */
+.about h1.heading,
+.about .info-container h1 {
+  margin-top: 2rem;
+}
 /*# sourceMappingURL=style.css.map */
