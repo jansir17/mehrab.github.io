@@ -23,4 +23,4 @@ jobs:
 
       - run: npx playwright test
         env:
-          BASE_URL: https://mehrab.github.io/
+          BASE_URL: https://jansir17.github.io/mehrab.github.io/
