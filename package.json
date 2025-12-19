@@ -1,0 +1,17 @@
+{
+  "name": "mehrab.github.io",
+  "version": "1.0.0",
+  "description": "This is My Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0"
+  }
+}
